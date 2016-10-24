@@ -436,15 +436,15 @@ class Connection(object):
                 # look if it is really a prompt
                 if self.data != '':
                     # not at the end, is it in first chars ?
-                    tmp = self.logbuf.find(self.prompt)
+                    #tmp = self.logbuf.find(self.prompt)
                     # print("Prompt", len(self.data), tmp)
-                    if tmp == 0:
-                        loop = False
-                    if tmp == 1:
-                        tmp = self.logbuf.find('\n')
+                    #if tmp == 0:
+                    #    loop = False
+                    #if tmp == 1:
+                    #    tmp = self.logbuf.find('\n')
                         # print("Prompt ret 1", len(self.data), tmp)
-                        if tmp == 0:
-                            loop = False
+                    #    if tmp == 0:
+                    loop = False
                 else:
                     # look if prompt is at the end
                     tmp = self.logbuf.find(self.prompt)
